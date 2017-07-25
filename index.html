@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Wide Travel</title>
+</head>
+<body ng-app="wwt">
+<div ng-controller="bookCtrl">
+<h1>Best Tour Guide</h1>
+	<ul>
+		<li ng-repeat="book in books">
+			<h3>{{book.title}}<h5>Type: {{book.type}}</h5></h3> Price: ${{book.price}}
+		</li>
+	</ul>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controller/bookCtrl.js"></script>
+<script src="app/factories/guideFactory.js"></script>
+</body>
+</html>
